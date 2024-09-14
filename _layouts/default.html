@@ -98,7 +98,7 @@
 						</li>
 						<li>{{ site.summary }}</li>
 						<li><a href="{{ site.baseurl }}/donate" class="fa fa-dollar"> Donate to projects</a></li>
-						{% if site.email %}<li><a href="mailto:{{ site.email }}" class="fa fa-envelope" target="_blank"> Send us an email</a></li>{% endif %}
+						{% if site.email %}<li><a href="{{ site.email }}" class="fa fa-envelope" target="_blank"> Send us an email</a></li>{% endif %}
 						<li><a href="{{ site.baseurl }}/feed.xml" class="fa fa-rss" target="_blank"> Subscribe with RSS</a></li>
 					</ul>
 				</div>
@@ -112,7 +112,7 @@
 		</footer>
 		
 {% if jekyll.environment == 'production' %}
-<script data-goatcounter="https://go.d8a.org/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://d8a.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <noscript><img src="https://go.d8a.org/count?p=/ns"></noscript>
 
 <script type="text/javascript">
