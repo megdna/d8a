@@ -3,7 +3,7 @@ name: Robozome
 image: "https://avatars.githubusercontent.com/u/19498664"
 title: Molecular Machine Learning
 social:
-  - name: Github Repo
+  - name: GitHub
     link: https://github.com/robozome
     icon: github
 members:

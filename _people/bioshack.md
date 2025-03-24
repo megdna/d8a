@@ -3,21 +3,9 @@ name: BioShack
 image: "https://avatars.githubusercontent.com/u/11539735"
 title: Citizen Scientists
 social:
-  - name: Facebook
-    link: https://www.facebook.com/bioshack
-    icon: facebook
-  - name: Github
+  - name: GitHub
     link: https://github.com/bioshack
     icon: github
-  - name: LinkedIn
-    link: https://www.linkedin.com/company/bioshack
-    icon: linkedin
-  - name: Twitter
-    link: https://twitter.com/bioshack
-    icon: twitter
-  - name: Ko-fi
-    link: https://ko-fi.com/bioshack
-    icon: coffee
 projects:
   - Codons
   - GeneChain

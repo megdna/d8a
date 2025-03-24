@@ -3,21 +3,9 @@ name: Megan
 image: "https://avatars.githubusercontent.com/u/8283950"
 title: Data Scientist
 social:
-  - name: Github
+  - name: GitHub
     link: https://github.com/megdna
     icon: github
-  - name: LinkedIn
-    link: https://www.linkedin.com/in/megdna
-    icon: linkedin
-  - name: Mastodon
-    link: https://fediscience.org/@meg
-    icon: flask
-  - name: YouTube
-    link: https://www.youtube.com/megdna
-    icon: youtube
-  - name: Website
-    link: http://megdna.github.io
-    icon: external-link
 projects:
   - Codons
   - GeneChain

@@ -3,7 +3,7 @@ name: Retrogene
 image: "https://avatars.githubusercontent.com/u/21049674"
 title: Going Back to Move Forward
 social:
-  - name: Github Repo
+  - name: GitHub
     link: https://github.com/retrogene
     icon: github
 members:

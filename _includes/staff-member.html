@@ -7,7 +7,7 @@
 		<li><small>{{ include.member.title }}</small></li>
 		<li>
 		  {% for link in include.member.social %}
-				<small><a href="{% include relative-src.html src=link.link %}" class="fa fa-{{ link.icon }}" target="_blank"></a></small>
+				<small><a href="{% include relative-src.html src=link.link %}" class="fa fa-{{ link.icon }}" data-umami-event="{{ include.member.name }}" target="_blank"> {{ link.name }}</a></small>
 			{% endfor %}
 		</li>
 	</ul>

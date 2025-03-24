@@ -3,7 +3,7 @@ name: VoyaGene
 image: "https://avatars.githubusercontent.com/u/22062701"
 title: Journey the Genome
 social:
-  - name: Github Repo
+  - name: GitHub
     link: https://github.com/voyagene
     icon: github
 members:

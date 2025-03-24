@@ -3,7 +3,7 @@ name: Codons
 image: "https://avatars.githubusercontent.com/u/20877678"
 title: Coding for Life
 social:
-  - name: Github Repo
+  - name: GitHub
     link: https://github.com/codons
     icon: github
 members:

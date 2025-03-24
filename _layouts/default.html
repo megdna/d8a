@@ -85,9 +85,7 @@
 						</li>
 						{% for link in site.social %}
 						<li>
-							<a href="{% include relative-src.html src=link.link %}" {% if link.icon %}class="fa fa-{{ link.icon }}"{% endif %} target="_blank">
-								{{ link.name }}
-						 </a>
+							<a href="{% include relative-src.html src=link.link %}" {% if link.icon %}class="fa fa-{{ link.icon }}"{% endif %} data-umami-event="{{ link.name }}" target="_blank">{{ link.name }}</a>
 						</li>
 						{% endfor %}
 					</ul>
@@ -98,30 +96,23 @@
 						</li>
 						<li>{{ site.summary }}</li>
 						<li><a href="{{ site.baseurl }}/donate" class="fa fa-dollar"> Donate to projects</a></li>
-						{% if site.email %}<li><a href="mailto:{{ site.email }}" class="fa fa-envelope" target="_blank"> Send us an email</a></li>{% endif %}
-						<li><a href="{{ site.baseurl }}/feed.xml" class="fa fa-rss" target="_blank"> Subscribe with RSS</a></li>
+						{% if site.email %}<li><a href="mailto:{{ site.email }}" class="fa fa-envelope" data-umami-event="Email" target="_blank"> Send us an email</a></li>{% endif %}
+						<li><a href="{{ site.baseurl }}/feed.xml" class="fa fa-rss" data-umami-event="Feed" target="_blank"> Subscribe with RSS</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="legal-line">
 				<p class="container">
-					Copyright &copy; {% if site.founded %}{{site.founded}}-{% endif %}{{ site.time | date: '%Y' }} <strong><a href="{{ site.baseurl }}/">{{ site.title }}</a></strong> &bull; Buy us a <a href="https://ko-fi.com/bioshack" target="_blank">coffee <i class="fa fa-coffee"></i></a>
+					Copyright &copy; {% if site.founded %}{{site.founded}}-{% endif %}{{ site.time | date: '%Y' }} <strong><a href="{{ site.baseurl }}/">{{ site.title }}</a></strong> &bull; Buy us a <a href="https://ko-fi.com/bioshack" data-umami-event="Ko-fi" target="_blank">coffee <i class="fa fa-coffee"></i></a>
 				</p>
 			</div>
 		</footer>
-		
+
 {% if jekyll.environment == 'production' %}
 <script data-goatcounter="https://d8a.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <noscript><img src="https://d8a.goatcounter.com/count?p=/ns"></noscript>
-
-<script type="text/javascript">
-var sc_project=13031717; 
-var sc_invisible=1; 
-var sc_security="488ef692"; 
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><img src="https://c.statcounter.com/13031717/0/488ef692/1/"></noscript>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="03076e42-dd66-43a9-9a24-095a5bf3344f"></script>
 {% endif %}
 		
 	</body>

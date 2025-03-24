@@ -3,7 +3,7 @@ name: OpenDNA
 image: "https://avatars.githubusercontent.com/u/102555269"
 title: Genomics for Good
 social:
-  - name: Github Repo
+  - name: GitHub
     link: https://github.com/opndna
     icon: github
 members:

@@ -3,7 +3,7 @@ name: GeneChain
 image: "https://avatars.githubusercontent.com/u/20542853"
 title: Building Blocks of Life
 social:
-  - name: Github Repo
+  - name: GitHub
     link: https://github.com/genechain
     icon: github
 members:
