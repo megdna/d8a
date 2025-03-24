@@ -85,7 +85,7 @@
 						</li>
 						{% for link in site.social %}
 						<li>
-							<a href="{% include relative-src.html src=link.link %}" {% if link.icon %}class="fa fa-{{ link.icon }}"{% endif %} data-umami-event="{{ link.name }}" target="_blank">{{ link.name }}</a>
+							<a href="{% include relative-src.html src=link.link %}" {% if link.icon %}class="fa fa-{{ link.icon }}"{% endif %} data-umami-event="{{ link.name }}" target="_blank"> {{ link.name }}</a>
 						</li>
 						{% endfor %}
 					</ul>
