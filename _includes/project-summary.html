@@ -7,7 +7,7 @@
 		<li><small>{{ include.project.title }}</small></li>
 		<li>
       {% for link in include.project.social %}
-        <small><a href="{% include relative-src.html src=link.link %}" class="fa fa-{{ link.icon }}" data-umami-event="{{ include.project.name }}" target="_blank"> {{ link.name }}</a></small>
+        <small><a href="{% include relative-src.html src=link.link %}" class="fa fa-{{ link.icon }}" data-umami-event="{{ include.project.name }}" data-goatcounter-click target="_blank"> {{ link.name }}</a></small>
       {% endfor %}
 		</li>
 	</ul>
