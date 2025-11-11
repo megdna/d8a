@@ -3,11 +3,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Quattrocento|Vollkorn:400,400i,700,700i">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.bunny.net/css?family=Quattrocento|Vollkorn:400,400i,700,700i">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/touch-icon.png" sizes="192x192">
@@ -85,7 +86,7 @@
 						</li>
 						{% for link in site.social %}
 						<li>
-							<a href="{% include relative-src.html src=link.link %}" {% if link.icon %}class="fa fa-{{ link.icon }}"{% endif %} data-goatcounter-click="{{ link.name }}" data-umami-event="{{ link.name }}" target="_blank"> {{ link.name }}</a>
+							<a href="{% include relative-src.html src=link.link %}" {% if link.icon %}class="fa fa-{{ link.icon }}"{% endif %} data-goatcounter-click="{{ link.name }}" target="_blank"> {{ link.name }}</a>
 						</li>
 						{% endfor %}
 					</ul>
@@ -96,15 +97,15 @@
 						</li>
 						<li>{{ site.summary }}</li>
 						<li><a href="{{ site.baseurl }}/donate" class="fa fa-dollar"> Donate to projects</a></li>
-						{% if site.email %}<li><a href="mailto:{{ site.email }}" class="fa fa-envelope" data-goatcounter-click="Email" data-umami-event="Email" target="_blank"> Send us an email</a></li>{% endif %}
-						<li><a href="{{ site.baseurl }}/feed.xml" class="fa fa-rss" data-goatcounter-click="Feed" data-umami-event="Feed" target="_blank"> Subscribe with RSS</a></li>
+						{% if site.email %}<li><a href="mailto:{{ site.email }}" class="fa fa-envelope" data-goatcounter-click="Email" target="_blank"> Send us an email</a></li>{% endif %}
+						<li><a href="{{ site.baseurl }}/feed.xml" class="fa fa-rss" data-goatcounter-click="Feed" target="_blank"> Subscribe with RSS</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="legal-line">
 				<p class="container">
-					Copyright &copy; {% if site.founded %}{{site.founded}}-{% endif %}{{ site.time | date: '%Y' }} <strong><a href="{{ site.baseurl }}/">{{ site.title }}</a></strong> &bull; Buy us a <a href="https://ko-fi.com/bioshack" data-goatcounter-click="Ko-fi" data-umami-event="Ko-fi" target="_blank">coffee <i class="fa fa-coffee"></i></a>
+					Copyright &copy; {% if site.founded %}{{site.founded}}-{% endif %}{{ site.time | date: '%Y' }} <strong><a href="{{ site.baseurl }}/">{{ site.title }}</a></strong> &bull; Buy us a <a href="https://ko-fi.com/bioshack" data-goatcounter-click="Ko-fi" target="_blank">coffee <i class="fa fa-coffee"></i></a>
 				</p>
 			</div>
 		</footer>
@@ -112,7 +113,6 @@
 {% if jekyll.environment == 'production' %}
 <script data-goatcounter="https://d8a.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <noscript><img src="https://d8a.goatcounter.com/count?p=/ns"></noscript>
-<script defer src="https://cloud.umami.is/script.js" data-website-id="03076e42-dd66-43a9-9a24-095a5bf3344f"></script>
 {% endif %}
 		
 	</body>
